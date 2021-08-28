@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Corporate Finance: Overview</title>
+  <link href="global.css" type="text/css" rel="stylesheet">
+  <style type="text/css">
+ </style>
+</head>
+
+<div class="content">
+<br>
+<br>
+  <div class="sidebar">
+    <div data-spy="affix" data-offset-top="500" class="navbar affix-top">
+      <div class="affix-child">
+        <b> Something Extra</b>
+      </div>
+      <ul class="menu nav">
+        <li class="active">
+          <a href="index.html"> <b>Home</b></a>
+        </li>
+        <li>
+          <a href="overview.html"><strong>Overview</strong></a>
+        </li>
+        <li>
+          <a href="extraresources.html"><strong>Additional Resources</strong></a>
+        </li>
+        <li>
+        <a href="finalexam.html"><strong>Final Exam</strong></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="article">
+    <div class="title">
+        <strong>Update History</strong>  
+    </div>
+    <br>
+
+    <h3>Update History</h3>
+        <ul class="reading">
+           <li> [8/16]: Uploaded short excerpt M. Desai under Before the First Class.  Please read.  
+           </a>
+           </li>
+        </ul>
