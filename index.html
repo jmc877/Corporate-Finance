@@ -1,17 +1,46 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Corporate Finance 2022</title>
+  <title>Corporate Finance 2024</title>
   <link href="global.css" type="text/css" rel="stylesheet">
   <style type="text/css">
  </style>
+
+  <style>
+    .reading {
+        display: none;
+    }
+
+    h3 {
+        cursor: pointer;
+    }
+
+
+    #toggle-all {
+          margin-left: 20px;
+          padding: 3px 3px;
+          font-size: 10px; 
+          background-color: #94042c;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+
+      #toggle-all:hover {
+          background-color: #94042c;
+      }
+
+  </style>
+
+
 </head>
 
 <body>
 
 <div class="content">
  <div class="title">
-   <strong>Corporate Finance</strong>  Fall 2022
+   <strong>Corporate Finance</strong>  Fall 2024
   </div>
   <br>
   
@@ -29,12 +58,12 @@
         <br>
         <hr>
       <h1>Last Update: 
-        <br> 12 Dec 2022</h1> 
-          <small>[12/12]: Final HW scores posted and all HWs available outside of my office.  Please double check the scores and let me know if you have any questions. </small>
+        <br> 12 Apr 2024</h1> 
+          <small>[4/12]: Preliminary syllabus posted. </small>
        <hr>
       
       <h1>Assignments</h1>
-          <em><b>That's all Folks!  Good luck on the exam.</b></em>
+          <em><b>Before the first class, read the Overview and Learning Goals and skim the Additional Resources pages.</b></em>
       <hr>
     </div>
  
@@ -53,11 +82,11 @@
           <a href="extraresources.html"><strong>Additional Resources</strong></a>
         </li>
         <li>
-          <a href="zoomlinks.html"><strong>Zoom links</strong></a>
+          <a href="zoomlinks.html"><strong>Zoom link</strong></a>
           </li>
         
         <li>
-        <a href="finalexam.html"><strong>Final Exam</strong></a>
+        <a href="finalexam.html"><strong>Final Exam Information</strong></a>
         </li>
 
         <li>
@@ -73,7 +102,7 @@
 
     <h3>Required Texts and Materials</h3>
     <ul>
-      <li>Ivo Welch, <a href="https://book.ivo-welch.info/home/">Corporate Finance</a> (CF) (5th ed. 2022). The printed book is available for $59 at <a href="https://www.amazon.com/dp/0984004904">Amazon</a>.  It is also available for <a href="https://book.ivo-welch.info/read/">free</a> online. 
+      <li>Ivo Welch, <a href="https://book.ivo-welch.info/home/">Corporate Finance</a> (CF) (5th ed. 2022). The printed book is available for $49 at <a href="https://www.amazon.com/dp/0984004904">Amazon</a>.  It is also available for <a href="https://book.ivo-welch.info/read/">free</a> online. 
       </li>
         <ul>
           <li> <a href="Welch_Supplement_CorpFin.pdf">CF Supplement</a> (contains omitted materials from CF)
@@ -816,6 +845,39 @@
 </div>
 </div>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      var headings = document.querySelectorAll('h3');
+      var readingLists = document.querySelectorAll('.reading');
+      var toggleAllButton = document.getElementById('toggle-all');
+
+      var allExpanded = false;  // Track whether all sections are currently expanded or collapsed
+
+      headings.forEach(function (h3) {
+          h3.addEventListener('click', function () {
+              var readingList = this.nextElementSibling;
+              readingList.style.display = readingList.style.display === 'none' ? 'block' : 'none';
+          });
+      });
+
+      toggleAllButton.addEventListener('click', function () {
+          allExpanded = !allExpanded;  // Flip the current state
+
+          readingLists.forEach(function (list) {
+              list.style.display = allExpanded ? 'block' : 'none';
+          });
+
+          toggleAllButton.textContent = allExpanded ? 'Collapse All' : 'Expand All';
+      });
+  });
+</script>
+
+
+
+
+
+
 </body>
 </html>
 
