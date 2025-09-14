@@ -224,12 +224,17 @@ h4 ul {
 li {
     display: list-item;
     text-align: -webkit-match-parent;
+
 }
+
+.link.link-new {
+    background-image: url(new\ 2.gif);
+}
+
 
 .link.link-slides {
     background-image: url(pptx.png);
 }
-
 
 .link.link-problems {
     background-image: url(calculator_tiny.png);
